@@ -11,14 +11,18 @@
 </head>
 <body>
     <header>
-            <h1>THE CODE REVIEW</h1>
+        <h1>THE CODE REVIEW</h1>
+        <div class="container_header">
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr>
+        </div>
     </header>
     <form action="index.html" method="post">
         <fieldset>
+            <legend>Contact Information</legend>
             <div class="container_1">
-                <legend>Contact Information</legend>
+                
                 <label class="label_info" for="name">Full Name</label>
                 <input class="input_info" type="text" id="name" name="user_name" placeholder="Required " required>
 
@@ -32,7 +36,7 @@
                 <input class="input_info" type="text" id="address" name="user_address">
 
                 <label class="label_info" for="city">City</label>
-                <input class="input_info" type="text" id="city" name="user_city">
+                <input class="input_info" type="text" id="city" name="user_city" placeholder="Required " required>
 
                 <label class="label_info" for="state">State</label>
                 <select class="input_info" id="state" name="user_state">
@@ -90,12 +94,15 @@
                 </select>
 
                 <label class="label_info" for="zip_code">Zip Code</label>
-                <input class="input_info" type="text" id="zip_code" name="user_zip_code">
+                <div class="zip">
+                    <input class="input_info" type="text" id="zip_code" name="user_zip_code">
+                </div>
             </div>
         </fieldset>
+        <hr>
         <fieldset>
+            <legend>Newsletter</legend>
             <div class="container_2">
-                <legend>Newsletter</legend>
                 <label class="label_newsletter">Select the newsletters you would like to receive</label>
                 <div>
                     <input class="input_newsletter" type="checkbox" id="html" value="newsletter_html" name="user_newsletter"><label class="label_newsletter" for="html">HTML News</label>
